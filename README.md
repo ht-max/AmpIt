@@ -27,7 +27,6 @@ Project has a unique design and template for Joomla CMS. Uniques settings in tem
             * com_content (articles override)
             * mod_custom (custom modules)
             * mod_footer 
-            * mod_menu
         * images (images that were used in template)
         * language (template is supported multilanguage)
             * en-GB (EN by default)
