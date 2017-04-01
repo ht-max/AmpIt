@@ -4,7 +4,7 @@
 Example URL: http://project.ampit.codevery.com/
 
 ## Project Description:
-Project has a unique design and template. 
+Project has a unique design and template for Joomla CMS. Uniques settings in template, like a title, logo, background.
 
 ## Technologies:
 * Joomla CMS
@@ -49,6 +49,23 @@ Project has a unique design and template.
 </main>
 <jdoc:include type="modules" name="after-content" />
 <jdoc:include type="modules" name="footer" />
+```
+```php
+<?php defined('_JEXEC') or die;
+$i = 1;
+?>
+<div class="landing-article">
+    <?php foreach ($this->items as $item) { ?>
+        <!-- Section <?php echo $i; ?> -->
+        <section class="line-<?php echo $i. ' '.$item->alias ?>">
+            <div class="container">
+                <?php echo $item->text; ?>
+            </div>
+        </section>
+    <?php $i++; } ?>
+</div>
+
+
 ```
 #### CSS
 ``` css
