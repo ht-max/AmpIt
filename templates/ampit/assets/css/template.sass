@@ -1,0 +1,232 @@
+@import "variable"
+body
+  font-family: $font-r, arial, sans-serif
+.TopNav
+  background: url("../img/top-bg.jpg") no-repeat
+  background-size: cover
+  .white-wrap
+    background: transparentize($white, 0.4)
+    .logo, .nav-top
+      @media (max-width: $md)
+        text-align: center
+  .logo
+    margin-right: -21px
+    &:before
+      content: ''
+      display: inline
+      vertical-align: middle
+      line-height: 81px
+  .nav-top
+    text-align: right
+    .nav
+      &:before
+        content: ''
+        line-height: 81px
+        vertical-align: middle
+        display: inline
+      li
+        display: inline
+        margin-left: 21px
+        a
+          display: inline-block
+          padding: 0 21px
+          border-radius: 15px
+          line-height: 30px
+          color: $white
+          font-family: $font-sb
+          font-size: 14px
+          text-transform: uppercase
+          &:hover
+            background: $orange
+  .pageTitle
+    text-align: center
+    .wrap
+      padding: 89px 0
+    .t1
+      font-family: $font-b
+      font-size: 53px
+      color: $white
+    .t2
+      font-family: $font-b
+      color: $yellow
+      font-size: 54px
+      margin-bottom: 66px
+    .t3
+      color: $white
+      font-size: 22px
+      margin-bottom: 66px
+    .signup
+      display: inline-block
+      background: $orange
+      padding: 0 36px
+      line-height: 63px
+      color: $white
+      font-family: $font-b
+      font-size: 19px
+      text-transform: uppercase
+      border: 1px solid $orange-dark
+      border-radius: 3px
+/** Landing Social */
+.landing-social
+  padding: 20px 0
+  background: $grey
+  .item
+    margin: 20px 0
+    text-align: center
+    .icon
+      background-image: url('../img/landing-social.png')
+      background-repeat: no-repeat
+      background-position: 0 0
+      background-size: auto 100%
+      margin-bottom: 21px
+      width: 32px
+      height: 32px
+      display: inline-block
+      &.twitter
+        background-position: 0 0
+      &.facebook
+        background-position: -40px 0
+      &.mobile
+        background-position: -90px 0
+      &.website
+        background-position: -142px 0
+    .title
+      color: $black
+      font-family: $font-b
+      font-size: 16px
+      margin-bottom: 21px
+    .description
+      color: $black
+      font-size: 14px
+      font-family: $font-l
+/** Landing Article */
+.landing-article
+  section:nth-of-type(even)
+    .row > div
+      float: right
+  .preview
+    max-width: 100%
+    padding: 0 15px
+    margin-bottom: 30px
+    @media (max-width: $lg)
+      width: 100%
+      text-align: center
+  .wrap
+    padding: 0 50px
+    text-align: center
+  .title
+    font-family: $font-b
+    font-size: 26px
+    margin-bottom: 50px
+    text-align: center
+  .description
+    font-family: 17px/22px $font-r
+    text-align: center
+    p
+      margin-bottom: 21px
+    a
+      color: $orange
+      font-family: $font-b
+      margin-top: 50px
+    .amp
+      font-family: $font-sb
+      color: $orange
+      font-size: 24px
+  .readmore a
+    font-size: 15px
+    text-transform: uppercase
+    color: inherit
+  /** Landing articles */
+  .what-is-ampit
+    background: $orange
+    color: $white
+    padding: 121px 0
+  .why-use-ampit
+    color: $black
+    padding: 135px 0 0
+  .what-is-an-amp
+    background: url("../img/landing-line-3.jpg") no-repeat
+    background-size: cover
+    color: $white
+    padding: 108px 0 50px
+  .how-does-it-work
+    padding: 140px 0 110px
+    .nike
+      font-family: $font-l
+      font-size: 30px
+      margin: 75px 0
+      .amp
+        font-size: inherit
+    .note
+      font-size: 16px
+      font-style: italic
+      strong
+        font-size: 20px
+  .it-s-as-simple-and-fun-as
+    background: $grey
+    padding: 100px 0 40px
+    border-top: 2px solid darken($grey, 5%)
+    .item
+      text-align: center
+      margin-bottom: 60px
+      .circleimage
+        width: 242px
+        height: 242px
+        display: inline-block
+        box-sizing: border-box
+        border: 10px solid $orange
+        overflow: hidden
+        border-radius: 50%
+        background-size: cover
+        background-position: 50% 50%
+        box-shadow: 0 0 10px 0 $dark
+      .title
+        color: $orange
+        font-size: 22px
+        margin: 38px 0 18px
+        .count
+          background: $dark
+          width: 31px
+          height: 31px
+          border-radius: 50%
+          color: $white
+          display: inline-block
+          vertical-align: text-bottom
+          margin-right: 10px
+  .take-social-media
+    padding: 145px 0 130px
+    color: $black
+    .title
+      font-family: $font-r
+      font-size: 30px
+      margin-bottom: 60px
+    .jointoday
+      font-family: $font-b
+      font-size: 48px
+      margin-bottom: 85px
+      a
+        color: $orange
+    .button a
+      display: inline-block
+      padding: 0 70px
+      line-height: 75px
+      background: $orange
+      color: $white
+      font-size: 22px
+      font-family: $font-b
+footer
+  background: url('../img/footer.jpg') repeat
+  text-align: center
+  color: lighten($dark, 20%)
+  padding: 37px 0
+
+
+
+
+
+
+
+
+
+
+

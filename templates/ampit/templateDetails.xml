@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>AmpIt</name>
+	<version>1.0</version>
+	<creationDate>April 2015</creationDate>
+	<author>AMP IT Techonology</author>
+	<authorEmail>ht-max@yandex.ua</authorEmail>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>AMP IT site template.</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>nav-top</position>
+		<position>pre-content</position>
+		<position>after-content</position>
+		<position>header</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ampit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ampit.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+
+                <field name="note0" type="note" label="AMP IT: Template customization" class="alert alert-info" />
+
+                <field
+                        name="tmpl_logo"
+                        type="media"
+                        directory="logo"
+                        label = "Choose site logo"
+                        description="Load image with max height 81px"
+                        />
+
+                <field type="spacer" name="myspacer0" hr="true" />
+
+                <field
+                    name="tmpl_header"
+                    type="text"
+                    label="Template Header"
+					 />
+                <field
+                        name="tmpl_slogan"
+                        type="text"
+                        label="Template Slogan"
+                        />
+                <field
+                        name="tmpl_description"
+                        type="text"
+                        label="Template Description"
+                        />
+                <field type="spacer" name="myspacer1" hr="true" />
+                <field
+                        name="singup_text"
+                        type="text"
+                        label="Top button text"
+                        description="For example 'SIGN UP FOR FREE' "
+                        default="SIGN UP FOR FREE"
+                        />
+                <field
+                        name="singup_link"
+                        type="url"
+                        label="Top button URL"
+                        default="/"
+                        />
+                <field type="spacer" name="myspacer2" hr="true" />
+
+            </fieldset>
+		</fields>
+	</config>
+</extension>
