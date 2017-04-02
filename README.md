@@ -85,5 +85,8 @@ $i = 1;
 ```
 ### ScreenShare:
 
+#### iPhone 6
+![alt tag](iphone6ampit.gif)
+
 
 
