@@ -66,8 +66,8 @@ $i = 1;
 
 
 ```
-#### CSS
-``` css
+#### SASS
+``` sass
 .it-s-as-simple-and-fun-as
     background: $grey
     padding: 100px 0 40px
